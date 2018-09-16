@@ -37,7 +37,7 @@ end
 
 def get_english_meaning(path, emoticon)
   library = load_library(path)
-  puts library
+  binding.pry
   if library['get_meaning'][emoticon]
     return library['get_meaning'][emoticon]
   else
